@@ -35,7 +35,7 @@ function AnimationLeft({ children, delay }) {
         }}
         variants={{
           visible: { x: 0, opacity: 1 },
-          hidden: { x: 50, opacity: 0 },
+          hidden: { x: 100, opacity: 0 },
         }}
       >
         {children}
@@ -44,4 +44,3 @@ function AnimationLeft({ children, delay }) {
   }
 
   export { AnimationTop, AnimationLeft };
-  
