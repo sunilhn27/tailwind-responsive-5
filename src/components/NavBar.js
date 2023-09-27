@@ -21,7 +21,7 @@ function NavBar() {
         <section className='w-auto h-[6rem] '>
             <nav className='md:w-[73rem]  mx-auto flex justify-between items-center text-center  h-[6rem] px-3'>
                 <Image src={Logo} className='w-[8.8rem] md:w-[8.8rem] md:h-[2rem]' />
-                <div className='hidden md:flex gap-10 font-extrabold group-[5]:'>
+                <div className='hidden md:flex gap-10 font-extrabold'>
                     <Link href={"/"}>Home</Link>
                     <Link href={"/"}>About</Link>
                     <Link href={"/"}>Services</Link>

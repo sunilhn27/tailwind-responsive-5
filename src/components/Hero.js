@@ -1,24 +1,19 @@
 "use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import HeroImg from '@/asserts/HeroImg.png'
 import Image from 'next/image'
 import { AnimationLeft, AnimationTop } from '@/app/AnimationWrapper'
 
 function Hero() {
 
-
-    useEffect(() => {
-
-    }, [])
-
     return (
 
-        <section className='my-12 bg-[#FFFFFF] mx-2'>
+        <section className='my-6 bg-[#FFFFFF] mx-2'>
 
-            <div className='flex flex-col md:flex-row justify-end items-center '>
+            <div className='flex flex-col md:flex-row md:justify-end  items-center '>
                 <div className='flex flex-col '>
                     <AnimationTop delay={0.1}>
-                        <h1 className='md:text-[3.75rem] text-[2.15rem] md:w-[33.25rem] md:mb-0 mb-4 leading-tight'><span className='font-extrabold'>Your</span> <span className='text-[#F14836] '>Consultancy</span> Partner for <span className='font-extrabold'>Growth.</span></h1>
+                        <h1 className='2xl:text-[4.25rem] md:text-[3.75rem] text-[2.15rem] md:w-[33.25rem] 2xl:w-[38.25rem] md:mb-0 mb-4 leading-tight'><span className='font-extrabold'>Your</span> <span className='text-[#F14836] '>Consultancy</span> Partner for <span className='font-extrabold'>Growth.</span></h1>
                     </AnimationTop>
                     <AnimationTop delay={0.4}>
                         <p className='text-gray-500 md:w-[30rem]'>Phasellus vel elit efficitur, gravida libero sit amet, scelerisque tortor arcu, commodo sit amet nulla sed.</p>
@@ -33,7 +28,7 @@ function Hero() {
 
                 <AnimationLeft delay={0.2}>
                     <div className='flex ml-2 '>
-                        <Image src={HeroImg} alt='pic' className='md:w-[44rem] md:h-[34rem]' />
+                        <Image src={HeroImg} alt='pic' className='md:w-[44rem] md:h-[34rem] 2xl:w-[55rem] 2xl:h-[44rem]' />
                     </div>
                 </AnimationLeft>
 
