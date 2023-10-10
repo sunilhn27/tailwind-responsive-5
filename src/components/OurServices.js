@@ -3,6 +3,7 @@ import React from 'react'
 import Mic from '@/asserts/mic.png';
 import Graph from '@/asserts/graph.png';
 import Case from '@/asserts/pseudo.png';
+import Image1 from '@/asserts/Image1.png';
 
 function OurServices() {
     return (
@@ -31,6 +32,37 @@ function OurServices() {
                 </div>
             </div>
             <hr className='border-2 w-[90%] mx-auto mt-12'></hr>
+
+            <section className='mt-6'>
+                <div className='flex flex-col md:flex-row md:justify-evenly 2xl:justify-center 2xl:space-x-7'>
+
+                    <div>
+                        <Image src={Image1} />
+                    </div>
+
+                    <div className='flex '>
+                        <div className='flex flex-col space-y-4'>
+                            <h1 className='font-extrabold md:text-[2.4rem] w-[31rem] '>Business Consultancy
+                                <span className='font-extralight'> for Your Business Growth.</span>
+                            </h1>
+                            <p className='text-gray-500 w-[32rem] text-[0.9rem]' >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec est arcu. Maecenas
+                                semper tortor.
+                            </p>
+                            <p className='text-gray-500 w-[32rem] text-[0.9rem]'>In elementum in risus sed commodo. Phasellus nisi ligula, luctus at tempor vitae, placerat
+                                at ante. Cras sed consequat justo. Curabitur laoreet eu est vel convallis.</p>
+
+
+                            <div className='flex  items-center  space-x-3 text-[1.5rem]'>
+                                <div className="w-32 h-32 border-2 border-red-500 pt-12 rounded-full items-center justify-center text-center border-spacing-44"> 95%</div>
+                                <h1 className='w-[8rem]'>Consultancy Agency Skill.</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
 
         </section>
     )
