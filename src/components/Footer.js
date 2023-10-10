@@ -2,6 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from '@/asserts/logo.png'
 import Link from 'next/link'
+import { FiFacebook } from 'react-icons/fi'
+import { CiTwitter } from 'react-icons/ci'
+import { BsInstagram } from 'react-icons/bs'
+import { SlSocialLinkedin } from 'react-icons/sl';
 
 function Footer() {
     return (
@@ -52,6 +56,12 @@ function Footer() {
                                 Victoria, 1202 Australia. </p>
                             <p className='text-gray-500'>support@uideck.com </p>
                             <p className='text-gray-500'>+99 99000555651 </p>
+                        </div>
+                        <div className='flex mt-6 space-x-4 items-center'>
+                            <FiFacebook className='text-[1.5rem]' />
+                            <CiTwitter className='text-[1.5rem]' />
+                            <BsInstagram className='text-[1.5rem]' />
+                            <SlSocialLinkedin className='text-[1.5rem]' />
                         </div>
                     </div>
 
