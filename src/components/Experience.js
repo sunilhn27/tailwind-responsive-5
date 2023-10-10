@@ -21,7 +21,7 @@ function Experience() {
       <div className='flex justify-center items-center'>
         <AnimationTop delay={0.2}>
           <Image src={ExpImg} alt='pic' />
-          <p className='md:w-[60rem] border-2 flex justify-center text-center text-gray-500 mt-6 md:mx-16 mx-2'>
+          <p className='md:w-[60rem] flex justify-center text-center text-gray-500 mt-6 md:mx-16 mx-2'>
             Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci
             molestie blandit interdum. ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.
           </p>
