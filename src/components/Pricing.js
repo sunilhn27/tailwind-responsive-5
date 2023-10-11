@@ -12,7 +12,7 @@ function Pricing() {
                 <div className='flex flex-col md:flex-row'>
 
                     <div className='grid md:grid-cols-3 gap-3'>
-                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 border-red-700'>
+                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 rounded-xl'>
                             <div className='flex flex-col justify-center items-center text-center'>
                                 <h1 className='text-[2rem] pt-10'>50$/m</h1>
                                 <div className='flex space-x-1 items-center'>
@@ -33,13 +33,13 @@ function Pricing() {
                             </div>
                         </div>
 
-                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 border-red-700'>
+                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 rounded-xl shadow-2xl'>
 
                             <div className='flex flex-col justify-center items-center text-center'>
-                                <h1 className='text-[2rem] pt-10'>50$/m</h1>
+                                <h1 className='text-[2rem] pt-10'>69$/m</h1>
                                 <div className='flex space-x-1 items-center'>
-                                    <h1 className='text-white bg-blue-400 px-2 rounded-full py-1'>20% OFF</h1>
-                                    <p>Basic</p>
+                                    <h1 className='text-white bg-orange-600 px-2 rounded-full py-1'>special</h1>
+                                    <p>Standard</p>
                                 </div>
                                 <div className='flex flex-col mt-20 space-y-5 text-gray-400'>
                                     <p>Full Access</p>
@@ -49,18 +49,18 @@ function Pricing() {
                                 </div>
 
                                 <div className='mt-20'>
-                                    <button className='bg-gray-300 px-4 py-2 rounded-lg'>Sign Up Now !</button>
+                                    <button className='bg-orange-600 text-white px-4 py-2 rounded-lg'>Sign Up Now !</button>
                                 </div>
 
                             </div>
                         </div>
 
-                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 border-red-700'>
+                        <div className='md:w-[24rem] md:h-[38rem] w-[22rem] h-[34rem] border-2 rounded-xl'>
                             <div className='flex flex-col justify-center items-center text-center'>
-                                <h1 className='text-[2rem] pt-10'>50$/m</h1>
+                                <h1 className='text-[2rem] pt-10'>99$/m</h1>
                                 <div className='flex space-x-1 items-center'>
-                                    <h1 className='text-white bg-blue-400 px-2 rounded-full py-1'>20% OFF</h1>
-                                    <p>Basic</p>
+                                    <h1 className='text-white bg-[#63B85F] px-2 rounded-full py-1'>New</h1>
+                                    <p>Premium</p>
                                 </div>
                                 <div className='flex flex-col mt-20 space-y-5 text-gray-400'>
                                     <p>Full Access</p>
