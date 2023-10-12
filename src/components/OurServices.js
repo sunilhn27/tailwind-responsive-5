@@ -5,7 +5,7 @@ import Mic from '@/asserts/mic.png';
 import Graph from '@/asserts/graph.png';
 import Case from '@/asserts/pseudo.png';
 import Image1 from '@/asserts/Image1.png';
-import { AnimationTop } from '@/app/AnimationWrapper'
+import { AnimationLeft, AnimationTop } from '@/app/AnimationWrapper'
 
 function OurServices() {
     return (
@@ -22,8 +22,10 @@ function OurServices() {
 
             <div className='mt-12 flex flex-col md:flex-row justify-center items-center gap-8'>
                 <div className='flex items-center space-x-3 text-[#F14836] text-[0.9rem]'>
-                    <Image src={Case} />
-                    <h1 className='md:w-[7rem] w-[4rem] '>Business Consultancy</h1>
+                    <AnimationLeft delay={0.3}>
+                        <Image src={Case} />
+                        <h1 className='md:w-[7rem] w-[4rem] '>Business Consultancy</h1>
+                    </AnimationLeft>
                 </div>
 
                 <div className='flex items-center space-x-3 text-[#F14836] text-[0.9rem]'>
