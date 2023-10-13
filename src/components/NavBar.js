@@ -1,12 +1,12 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '@/asserts/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from "react-icons/ai";
 function NavBar() {
-
+    const [scrolled, setScrolled] = useState(false);
     const [showSubmenu, setShowSubmenu] = useState(false);
     const [mobileView, setMobileView] = useState(true);
     const toggleSubmenu = () => {
@@ -17,9 +17,28 @@ function NavBar() {
         setMobileView(!mobileView);
     };
 
+    const handleScroll = () => {
+        if (window.scrollY > 100) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const navbarClass = scrolled ? 'bg-white shadow-md' : 'bg-transparent';
+    // const navText = scrolled ? 'text-black' : 'text-red';
+
+
     return (
-        <section className='w-auto h-[6rem] '>
-            <nav className='md:w-[73rem]  mx-auto flex justify-between items-center text-center  h-[6rem] px-3'>
+        <section className='w-auto h-[6rem] md:fixed top-0 left-0 right-0 z-10 '>
+            <nav className={`md:w-[73rem]  mx-auto flex justify-between items-center text-center  h-[6rem] px-3 ${navbarClass}`} >
                 <Image src={Logo} className='w-[8.8rem] md:w-[8.8rem] md:h-[2rem]' />
                 <div className='hidden md:flex gap-10 font-extrabold'>
                     <Link href={"/"}>Home</Link>

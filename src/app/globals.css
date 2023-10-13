@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-  
-
   
   .swiper-slide:nth-child(n) {
     background-color: ghostwhite;
