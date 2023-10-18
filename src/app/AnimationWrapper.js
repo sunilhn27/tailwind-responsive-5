@@ -7,7 +7,7 @@ function AnimationTop({ children, delay }) {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{
-        duration: 1.2,
+        duration: 1,
         ease: [0.17, 0.67, 0.83, 0.91],
         delay: delay,
       }}
@@ -29,7 +29,7 @@ function AnimationLeft({ children, delay }) {
         whileInView="visible"
         viewport={{ once: true }}
         transition={{
-          duration: 1.2,
+          duration: 1,
           ease: [0.17, 0.67, 0.83, 0.91],
           delay: delay,
         }}
